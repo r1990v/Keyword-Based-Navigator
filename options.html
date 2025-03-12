@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keyword Based Navigator Options</title>
+  <script src="options.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    .action-buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .action-buttons button {
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    .add-keyword-section {
+      margin-top: 30px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .delete-button {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    .info-box {
+      background-color: #e7f3fe;
+      border-left: 6px solid #2196F3;
+      padding: 10px;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Keyword Based Navigator Options</h1>
+  
+  <div class="info-box">
+    <p><strong>How to use this extension:</strong> Type <code>s</code> in the address bar, press space, then type your keyword and search term.</p>
+    <p>Example: <code>s alert HI12345</code> to search for that alert ID</p>
+  </div>
+  
+  <div class="action-buttons">
+    <input type="file" id="fileInput">
+    <button id="uploadBtn">Upload JSON</button>
+    <button id="downloadBtn">Download JSON</button>
+  </div>
+
+  <div class="add-keyword-section">
+    <h2>Add New Keyword</h2>
+    <div class="form-group">
+      <label for="newKeyword">Keyword:</label>
+      <input type="text" id="newKeyword" placeholder="e.g., alert">
+    </div>
+    <div class="form-group">
+      <label for="newName">Name:</label>
+      <input type="text" id="newName" placeholder="e.g., Find Alert by ID">
+    </div>
+    <div class="form-group">
+      <label for="newUrl">URL (use %s for the search term):</label>
+      <input type="text" id="newUrl" placeholder="e.g., https://example.com/search?q=%s">
+    </div>
+    <button id="addKeywordBtn">Add Keyword</button>
+  </div>
+
+  <h2>Available Keywords</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Keyword</th>
+        <th>Name</th>
+        <th>URL</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="keywordTableBody">
+      <!-- Keywords will be populated here -->
+    </tbody>
+  </table>
+</body>
+</html>
