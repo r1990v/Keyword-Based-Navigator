@@ -1,0 +1,42 @@
+{
+    "google": {
+        "name": "Google",
+        "url": "https://www.google.com/search?q=%s"
+    },
+    "youtube": {
+        "name": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=%s"
+    },
+    "facebook": {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/search/top/?q=%s"
+    },
+    "instagram": {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/explore/tags/%s/"
+    },
+    "wikipedia": {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=%s"
+    },
+    "reddit": {
+        "name": "Reddit",
+        "url": "https://www.reddit.com/search/?q=%s"
+    },
+    "bing": {
+        "name": "Bing",
+        "url": "https://www.bing.com/search?q=%s"
+    },
+    "twitter": {
+        "name": "Twitter",
+        "url": "https://twitter.com/search?q=%s"
+    },
+    "amazon": {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=%s"
+    },
+    "yahoo": {
+        "name": "Yahoo",
+        "url": "https://search.yahoo.com/search?p=%s"
+    }
+}
